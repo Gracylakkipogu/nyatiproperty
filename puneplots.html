@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pune plots</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="welcome-section">
+        <h1>Welcome to Nyati Properties</h1>
+        <p>Find Your Dream Plot With Us</p>
+    </div>
+    <footer class="footer">
+        <h3>Plot Finder</h3>
+        <p>Helping you find the best plots in Pune.</p>
+        <p> Contact: +91 545576177278</p>
+        <p>Email: plotfinder@gmail.com</p>
+        <p>© 2026 Plot Finder. All Rights Reserved.</p>
+    </footer>
+
+
+    <section class="puneplots">
+        <h1>Explore Premium Plots in Pune</h1>
+        <p>Choose from premium plots in prime Pune locations with excellent connectivity and future growth
+            potential.</p>
+    </section>
+
+    <section class="search-container">
+        <h2>Find the perfect plot in pune...</h2>
+        <p>Select your preferred area and sq.ft...!</p>
+        <div class="search-box">
+            <select id="area">
+                <option>select area</option>
+                <option>Hadapsar</option>
+                <option>Pimpri-Chinchwad</option>
+                <option>Wagholi</option>
+                <option>Hinjewadi</option>
+                <option>Magarpatta City</option>
+            </select>
+            <select id="sq.ft">
+                <option>select sq.ft</option>
+                <option>1000 sq.ft</option>
+                <option>2500 sq.ft</option>
+                <option>1500 sq.ft</option>
+            </select>
+            <button onclick="searchplots()">Find My Plot</button>
+        </div>
+        <div id="result"></div>
+
+    </section>
+
+    <section class="thankyou">
+        <h2>Thank You for Visiting Plot Finder.....!!!!</h2>
+        <p>Explore premium plots in Pune and find your perfect investment opportunity.</p>
+        <button onclick="backHome()">Back to Home</button>
+    </section>
+
+    <script>
+        function PunePlots() {
+            window.location.href = "puneplots.html";
+        }
+        function searchplots() {
+
+            let area = document.getElementById("area").value;
+            let size = document.getElementById("sq.ft").value;
+            let result = document.getElementById("result");
+
+            if (area === "Hadapsar" && size === "1000 sq.ft") {
+
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/hadapsarplot.jpg">
+        <h3>Hadapsar Plot</h3>
+        <p>Size: 1000 sq.ft</p>
+        <p>Price: ₹35 Lakhs</p>
+        <p>Location:Handewadi</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20hadapsar%20plot%20that%20is%20of%20,1000%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+
+            }
+            else if (area === "Hadapsar" && size === "2500 sq.ft") {
+
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/hadapsar2.jpeg">
+        <h3>Hadapsar Premium Plot</h3>
+        <p>Size: 2500 sq.ft</p>
+        <p>Price: ₹80 Lakhs</p>
+        <p>Location: Near Magarpatta City</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Hadapsar%20Premium%plot%20that%20is%20of%20,2500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+
+            }
+            else if (area === "Pimpri-Chinchwad" && size === "1000 sq.ft") {
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/diamondbakery.jpg">
+        <h3>pimpri-chinchwad Plot</h3>
+        <p>Size: 1000 sq.ft</p>
+        <p>Price: ₹45 Lakhs</p>
+        <p>Location:near Diamond Bakery</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Pimpri-chinchwad%plot%20that%20is%20of%20,1000%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+            else if (area === "Pimpri-Chinchwad" && size === "1500 sq.ft") {
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/pimplegurav.jpeg">
+        <h3>pimpri-chinchwad Premium Plot</h3>
+        <p>Size: 1500 sq.ft</p>
+        <p>Price: ₹80 Lakhs</p>
+        <p>Location: Near pimple gurav</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Pimpri-Chinchwad%premium%plot%20that%20is%20of%20,1500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+            else if (area === "Wagholi" && size === "2500 sq.ft") {
+
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/anandnagar.jpg">
+        <h3>Wagholi Premium Plot</h3>
+        <p>Size: 2500 sq.ft</p>
+        <p>Price: ₹90 Lakhs</p>
+        <p>Location: Near Anand Nagar</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Wagholi%20Premium%20Plot%20that%20is%20of%20,2500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+
+            }
+            else if (area === "Wagholi" && size === "1500 sq.ft") {
+
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/taravdewasti.jpeg">
+        <h3>Wagholi Premium Plot</h3>
+        <p>Size: 2500 sq.ft</p>
+        <p>Price: ₹50 Lakhs</p>
+        <p>Location: Near JSPM College</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Wagholi%20that%20is%20of%20,2500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+            else if (area === "Hinjewadi" && size === "1500 sq.ft") {
+
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/hinjewadi1.jpg">
+        <h3>Hinjewadi Premium Plot</h3>
+        <p>Size: 1500 sq.ft</p>
+        <p>Price: ₹75 Lakhs</p>
+        <p>Location: Near dange chowk</p>
+   <button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Hinjewadi%20plot%20that%20is%20of%20,1500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+            else if (area === "Hinjewadi" && size === "2500 sq.ft") {
+
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/hinjewadi2.jpeg">
+        <h3>Hinjewadi Premium Plot</h3>
+        <p>Size: 2500 sq.ft</p>
+        <p>Price: ₹50 Lakhs</p>
+        <p>Location: Kumar pacific mall</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Hinjewadi%20Premium%20Plot%20that%20is%20of%20,2500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+
+            else {
+                result.innerHTML = "<p>No plots available for this selection.</p>";
+            }
+        }
+        function backHome() {
+            window.location.href = "index.html";
+        }
+
+    </script>
+
+</body>
+
+</html>

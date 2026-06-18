@@ -1,0 +1,337 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    padding: 15px;
+    background: #111;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background: goldenrod;
+    color: black;
+}
+
+.hero h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: goldenrod;
+    font-size: 24px;
+}
+
+body {
+    background-color: black;
+}
+
+.about {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #f1c40f;
+    text-align: center;
+}
+
+.about p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: left;
+    color: lemonchiffon;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+}
+
+.features {
+    text-align: left;
+    color: aliceblue;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+}
+
+.uses {
+    padding: 20px;
+    text-align: left;
+}
+
+.uses h2 {
+    text-align: left;
+    color: lemonchiffon;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+}
+
+.uses ul {
+    text-align: left;
+    color: aliceblue;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+}
+
+.gallery {
+    text-align: center;
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.row img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid gray;
+    transition: 0.3s;
+}
+
+.row img:hover {
+    transform: scale(1.05);
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.signin-box {
+    margin-top: 100px;
+    padding: 30px;
+    display: inline-block;
+    background: grey;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.signin-box input {
+    width: 220px;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.signin-box button {
+    padding: 10px 25px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.signin-box button:hover {
+    background: darkgreen;
+}
+
+.signin-page {
+    background-color: grey;
+}
+
+.puneplots h1 {
+    text-align: center;
+    font-family: cursive;
+    padding: 20px;
+    color: goldenrod;
+}
+
+.puneplots p {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+.search-container {
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.search-container h2 {
+    color: goldenrod;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.search-container p {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.search-box {
+    background: #1e1e1e;
+    width: 450px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.search-box select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-box button {
+    width: 100%;
+    padding: 12px;
+    background: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    transform: scale(1.03);
+}
+
+.plot-card {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.plot-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.plot-card h3 {
+    color: goldenrod;
+}
+
+.enquire-btn {
+    background: goldenrod;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.enquire-btn:hover {
+    transform: scale(1.05);
+    background: gold;
+}
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid goldenrod;
+}
+
+.footer h3 {
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.thankyou {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.thankyou h2 {
+    color: goldenrod;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 8px;
+}
+
+.welcome-section h1 {
+    color: goldenrod;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .search-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .plot-card {
+        width: 90%;
+    }
+
+    .row img {
+        width: 90%;
+        height: auto;
+    }
+
+    .hero h3,
+    .search-container h2,
+    .welcome-section h1 {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 8px auto;
+        width: 80%;
+    }
+
+    .search-container {
+        padding: 20px;
+    }
+
+    .signin-box {
+        width: 90%;
+    }
+}

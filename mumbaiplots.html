@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>mumbai plots</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="welcome-section">
+        <h1>Welcome to Nyati Properties</h1>
+        <p>Find Your Dream Plot With Us</p>
+    </div>
+    <footer class="footer">
+        <h3>Plot Finder</h3>
+        <p>Helping you find the best plots in Mumbai.</p>
+        <p> Contact: +91 438878377817</p>
+        <p>Email: plotfinder@gmail.com</p>
+        <p>© 2026 Plot Finder. All Rights Reserved.</p>
+    </footer>
+
+
+    <section class="mumbaiplots">
+        <h1>Explore Premium Plots in Mumbai</h1>
+        <p>Choose from premium plots in prime Mumbai locations with excellent connectivity and future growth
+            potential.</p>
+    </section>
+    <section class="search-container">
+        <h2>Find the perfect plot in Mumbai...</h2>
+        <p>Select your preferred area and sq.ft...!</p>
+        <div class="search-box">
+            <select id="area">
+                <option>select area</option>
+                <option>Navi Mumbai</option>
+                <option>Panvel</option>
+                <option>Kharghar</option>
+                <option>Thane</option>
+                <option>Dombivli</option>
+            </select>
+            <select id="sq.ft">
+                <option>sq.ft</option>
+                <option>1000 sq.ft</option>
+                <option>2500 sq.ft</option>
+                <option>1500 sq.ft</option>
+            </select>
+            <button onclick="searchplots()">Find My Plot</button>
+        </div>
+        <div id="result"></div>
+    </section>
+    <section class="thankyou">
+        <h2>Thank You for Visiting Plot Finder.....!!!!</h2>
+        <p>Explore premium plots in Mumbai and find your perfect investment opportunity.</p>
+        <button onclick="backHome()">Back to Home</button>
+    </section>
+
+    <script>
+        function MumbaiPlots() {
+            window.location.href = "mumbaiplots.html";
+        }
+        function searchplots() {
+            let area = document.getElementById("area").value;
+            let size = document.getElementById("sq.ft").value;
+            let result = document.getElementById("result");
+
+            if (area === "Panvel" && size === "2500 sq.ft") {
+
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/plot1.jpeg">
+        <h3>Panvel Plot</h3>
+        <p>Size: 2500 sq.ft</p>
+        <p>Price: ₹40 Lakhs</p>
+        <p>Location:Ramwadi</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Panvelplot%20that%20is%20of%20,2500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+            else if (area === "Panvel" && size === "1500 sq.ft") {
+
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/plot6.jpeg">
+        <h3>Panvel Premium Plot</h3>
+        <p>Size: 1500 sq.ft</p>
+        <p>Price: ₹30 Lakhs</p>
+        <p>Location: Near Sarojini Nagar</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Panvel%20Premium%20Plot%20that%20is%20of%20,1500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+            else if (area === "Thane" && size === "1000 sq.ft") {
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/plot7.jpg">
+        <h3>Thane Plot</h3>
+        <p>Size: 1000 sq.ft</p>
+        <p>Price: ₹45 Lakhs</p>
+        <p>Location:Mohammadwadi</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Thane%20Plot%20that%20is%20of%20,1000%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+            else if (area === "Thane" && size === "2500 sq.ft") {
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="/images/plot8.jpg">
+        <h3>Thane Premium Plot</h3>
+        <p>Size: 2500 sq.ft</p>
+        <p>Price: ₹80 Lakhs</p>
+        <p>Location:Buldhana</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Thane%20Premium%20Plot%20that%20is%20of%20,2500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+            else if (area === "Kharghar" && size === "1500 sq.ft") {
+                result.innerHTML = `
+    <div class="plot-card">
+        <img src="images/plot10.jpg">
+        <h3>Kharghar Plot</h3>
+        <p>Size:1500 sq.ft</p>
+        <p>Price:₹9 Lakhs</p>
+        <p>Location:Salunkhe Vihar</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Khargharplot%20that%20is%20of%20,1500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+</div>
+`;
+            }
+            else if (area === "Kharghar" && size === "2500 sq.ft") {
+                result.innerHTML = `
+<div class="plot-card">
+<img src="images/plot11.jpeg">
+<h3>Kharghar Premium Plot</h3>
+<p>Size: 2500 sq.ft</p>
+<p>Price:₹90 Lakhs</p>
+<p>Location: Near TCS Company</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Kharghar%20Premium%20Plot%20that%20is%20of%20,2500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+</div>
+`;
+            }
+            else if (area === "Dombivli" && size === "1000 sq.ft") {
+                result.innerHTML = `
+    <div class="plot-card">
+    <img src="images/plot12.jpg">
+    <h3>Dombivli Plot</h3>
+    <p>Size:1000 sq.ft</p>
+    <p>Price:₹20 Lakhs</p>
+    <p>Location:Kondhwa</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Dombivliplot%20that%20is%20of%20,1000%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+</div>
+`;
+            }
+            else if (area === "Dombivli" && size === "2500 sq.ft") {
+                result.innerHTML = `
+    <div class="plot-card">
+    <img src="images/plot13.jpg">
+    <h3>Dombivli Premium Plot</h3>
+    <p>Size:2500 sq.ft</p>
+    <p>Price:₹55 Lakhs</p>
+    <p>Location: Fatima Nagar</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20Dombivli%20Premium%20Plot%20that%20is%20of%20,2500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+</div>
+`;
+            }
+            else if (area === "Navi Mumbai" && size === "1000 sq.ft") {
+                result.innerHTML = `
+    <div class="plot-card">
+    <img src="images/plot14.jpeg">
+    <h3>Navi Mumbai</h3>
+    <p>Size:1000 sq.ft</p>
+    <p>Price:₹58 Lakhs</p>
+    <p>Location: Bombay</p>
+<button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20NaviMumbai%20that%20is%20of%20,1000%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+</button>
+    </div>
+    `;
+            }
+            else if (area === "Navi Mumbai" && size === "1500 sq.ft") {
+                result.innerHTML = `
+    <div class="plot-card">
+    <img src="images/plot15.jpeg">
+    <h3>Navi Mumbai Premium Plot</h3>
+    <p>Price: ₹25 Lakhs</p>
+    <p>Size:1500 sq.ft</p>
+    <p>Location: wanowrie</p>
+    <button class="enquire-btn"
+onclick="window.open('https://wa.me/919579491714?text=Hello%20Nyati%20Properties,%20I%20am%20interested%20in%20the%20NaviMumbai%20that%20is%20of%20,1500%20sq.ft%20Plot.%20Please%20share%20more%20details.')">
+Enquire Now
+</button>
+    </div>
+    `;
+            }
+            else {
+                result.innerHTML = "<p>No plots available for this selection.</p>";
+            }
+
+        }
+        function backHome() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>
